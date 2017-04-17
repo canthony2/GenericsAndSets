@@ -18,6 +18,8 @@ public class Practice1 {
         list.add("Vodka");
         list.add("Beer");
         
+        list.add(2, "Steak");
+        
         for (String item : list) {
             System.out.println(list);
         }
