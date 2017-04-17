@@ -1,6 +1,8 @@
 package Practice;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Vector;
 
 /**
  *
@@ -8,29 +10,21 @@ import java.util.ArrayList;
  */
 public class Practice1 {
     public static void main(String[] args) {
-        
-//        Manual Boxing and Unboxing
-//        Integer x = new Integer(1);
-//        int primitive = x.intValue();
 
-        //Automatic Boxing and Unboxing
-        Integer x = 1;
-        int primitve = x;
+        List<String> list = new ArrayList<>();
         
-        //Type Wrapper classes
-        //int ---> Integer
-        //long ---> Long
-        //double ---> Double
-        //etc...
+        list.add("Beer");
+        list.add("Chips");
+        list.add("Vodka");
+        list.add("Beer");
         
-        //Wrong way
-        ArrayList list = new ArrayList();
+        for (String item : list) {
+            System.out.println(list);
+        }
         
-        list.add("hello");
-        list.add(1);
-        Object value = list.get(1);
+        for(int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i));
+        }
         
-
-
     }
 }
